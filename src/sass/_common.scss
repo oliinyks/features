@@ -1,1 +1,45 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body {
+  font-family: 'Ovo', serif;
+  color: #fff;
+  font-size: 18px;
+  background-color: rgb(82, 110, 110);
+}
+section {
+  margin: 40px 0;
+}
+.main-title {
+  margin: 20px;
+  text-align: center;
+  font-size: 32px;
+}
+.title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.btn-go-back {
+  display: block;
+  margin-top: 30px;
+}
+.navigation {
+  margin-top: 30px;
+  & li {
+    margin-top: 20px;
+  }
+}

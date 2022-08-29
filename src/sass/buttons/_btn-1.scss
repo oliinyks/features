@@ -1,0 +1,31 @@
+.btn-1 {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Sumana', serif;
+  color: #fff;
+  outline: 2px solid #fff;
+  padding: 30px 60px;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s;
+  &:hover {
+    color: rgb(82, 110, 110);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+  }
+}
+.btn-1:hover::before {
+  width: 150%;
+}

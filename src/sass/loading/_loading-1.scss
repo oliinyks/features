@@ -1,0 +1,25 @@
+.main {
+  width: 200px;
+  border: 1px solid #000;
+  height: 8px;
+  border-radius: 10px;
+  z-index: 2;
+}
+.box {
+  border-radius: 10px;
+  width: 200px;
+  height: 6px;
+  background-color: #000;
+  animation: anima;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anima {
+  from {
+    width: 0;
+  }
+  to {
+    width: 200px;
+  }
+}
