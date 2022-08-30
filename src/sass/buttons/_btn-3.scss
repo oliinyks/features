@@ -1,0 +1,22 @@
+.btn-3 {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 30px 60px;
+  outline: 2px solid #fff;
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+
+    left: -10px;
+    width: 5px;
+    top: 0;
+    bottom: 0;
+  }
+  &:hover::before {
+    left: calc(100% + 5px);
+    transition: left 500ms;
+  }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Text</title>
+    <title>Input and checkbox</title>
     <link rel="icon" href="./images/favicon.ico" type="image/any-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,18 +17,21 @@
   <body>
     <div class="container">
       <p><a href="index.html" class="btn-go-back">Go back</a></p>
-      <h1 class="main-title">Text</h1>
+      <h1 class="main-title">Input and checkbox</h1>
 
-      <section class="text-1">
-        <h2 class="title">1. Typing text animation</h2>
-        <div class="typing-demo">This is a typing demo...</div>
+      <section>
+        <h2 class="title">1. Input field animation</h2>
+        <div class="input-group">
+          <input type="text" id="name" required class="input" />
+          <label for="name" class="input-label">Email address</label>
+        </div>
       </section>
-
-      <section class="text-2">
-        <h2 class="title">2. Fill animation</h2>
-        <p class="fill-text" data-text="This is a typing demo">
-          This is a typing demo
-        </p>
+      <section>
+        <h2 class="title">2. Custom checkbox toggle</h2>
+        <label class="switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
       </section>
     </div>
   </body>

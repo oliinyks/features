@@ -1,0 +1,27 @@
+.fill-text {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.3vw rgba(82, 110, 110);
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 100%;
+    color: #fff;
+    -webkit-text-stroke: 0vw rgb(82, 110, 110);
+    border-right: 2px solid #fff;
+    overflow: hidden;
+    animation: animate 3s linear infinite;
+  }
+}
+@keyframes animate {
+  0% {
+    width: 0;
+  }
+  70% {
+    width: 90%;
+  }
+}

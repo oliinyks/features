@@ -1,0 +1,28 @@
+.icons-wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+.icon {
+  animation: float 5s ease-in-out infinite;
+  & + .icon {
+    margin-left: 10px;
+  }
+}
+.ri-facebook-circle-line {
+  animation-delay: 1s;
+}
+.ri-telegram-line {
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
