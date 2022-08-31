@@ -1,0 +1,41 @@
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn-6 {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: rgb(82, 110, 110);
+  border: 1px solid rgb(140, 156, 156);
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+.border {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn-6:hover {
+  transition: 1s ease-in-out;
+  background: rgb(82, 110, 110);
+}
+
+.btn-6:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn-6 span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
