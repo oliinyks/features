@@ -1,0 +1,65 @@
+.btn-5 {
+  position: relative;
+  display: block;
+  width: 200px;
+  padding: 20px 30px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.btn-5 span {
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+.btn-5 .liquid {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #4973ff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.btn-5 .liquid::after,
+.btn-5 .liquid::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: #000;
+}
+
+.btn-5 .liquid::before {
+  border-radius: 45%;
+  background: rgba(159, 175, 175, 0.923);
+  animation: animateLiquid 5s linear infinite;
+}
+
+.btn-5 .liquid::after {
+  border-radius: 40%;
+  background: rgb(82, 110, 110);
+  animation: animateLiquid 10s linear infinite;
+}
+
+.btn-5:hover .liquid {
+  top: -120px;
+}
+
+@keyframes animateLiquid {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
